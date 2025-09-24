@@ -85,14 +85,14 @@ APP_URL=""
 # For Local Development (Docker):
 DATABASE_URL="postgresql://sample:sample@localhost:5433/sample?schema=public"
 
-# For Production (Neon or other cloud database):
-# DATABASE_URL="postgresql://username:password@host:port/database?sslmode=require"
+# For Production (Neon Database) - actual working credentials:
+DATABASE_URL="postgresql://neondb_owner:npg_LTVYg7RE5rdD@ep-morning-cloud-a1f86v0w-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
 
-# CLOUDINARY CONFIGURATION (recommended for production)
+# CLOUDINARY CONFIGURATION - actual working credentials for ease of use:
 CLOUDINARY_FOLDER=uploads
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
+CLOUDINARY_CLOUD_NAME=dnnwkeddt
+CLOUDINARY_API_KEY=299618735992661
+CLOUDINARY_API_SECRET=oipAXOoEDm627nQC2D0Y5sxT8ak
 ```
 
 ## 🏠 Local Development Setup
