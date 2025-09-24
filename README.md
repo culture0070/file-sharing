@@ -163,6 +163,20 @@ The API will be available at `http://localhost:8000`
 
 ### Deployment Platforms
 
+#### Render (Recommended)
+
+**Option 1: Using render.yaml (Automatic)**
+1. Push code to GitHub
+2. Connect repository to Render
+3. Deploy automatically with included `render.yaml`
+
+**Option 2: Manual Setup**
+1. Create new Web Service on Render
+2. Connect your GitHub repository
+3. Set build command: `npm install && npm run build`
+4. Set start command: `npm start`
+5. Add environment variables (see Environment Variables section)
+
 #### Vercel
 ```bash
 vercel --prod

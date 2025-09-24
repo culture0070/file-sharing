@@ -1,0 +1,33 @@
+services:
+  - type: web
+    name: file-sharing-api
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: prod
+      - key: PORT
+        value: 10000
+      - key: CONFIG
+        value: cloudinary
+      - key: FOLDER
+        value: uploads
+      - key: SIZE
+        value: 10485760
+      - key: INACTIVE_DAYS
+        value: 2
+      - key: FILE_CLEANUP_CRON_EXPRESSION
+        value: "0 0 * * *"
+      - key: APP_URL
+        value: ""
+      - key: DATABASE_URL
+        value: postgresql://neondb_owner:npg_LTVYg7RE5rdD@ep-morning-cloud-a1f86v0w-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+      - key: CLOUDINARY_FOLDER
+        value: uploads
+      - key: CLOUDINARY_CLOUD_NAME
+        value: dnnwkeddt
+      - key: CLOUDINARY_API_KEY
+        value: 299618735992661
+      - key: CLOUDINARY_API_SECRET
+        value: oipAXOoEDm627nQC2D0Y5sxT8ak
